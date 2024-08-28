@@ -1,11 +1,12 @@
 import os
+from pydantic import BaseSettings
 
-UPLOAD_FOLDER = 'uploads/'
-OUTPUT_FOLDER = 'static/output/'
+class Settings(BaseSettings):
+    app_name: str = "FastAPI Project"
+    upload_folder: str = "app/static/uploads/"
+    output_folder: str = "app/static/output/"
 
-# Ensure folders exist
-if not os.path.exists(UPLOAD_FOLDER):
-    os.makedirs(UPLOAD_FOLDER)
+    class Config:
+        env_file = ".env"
 
-if not os.path.exists(OUTPUT_FOLDER):
-    os.makedirs(OUTPUT_FOLDER)
+settings = Settings()
