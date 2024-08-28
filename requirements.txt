@@ -1,5 +1,5 @@
-fastapi==0.70.0   # Compatible with older Python versions
-uvicorn==0.17.6   # Compatible with older Python versions
-opencv-python==4.5.3.56  # Older version compatible with Python 3.7 or 3.8
-numpy==1.21.6    # Last version supporting Python 3.7
-Werkzeug==2.0.3   # Compatible with older Python versions
+fastapi 
+uvicorn
+opencv-python  # Older version compatible with Python 3.7 or 3.8
+numpy
+Werkzeug
